@@ -1,0 +1,56 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model FeedApp.Core.Entities.Business.ProblemViewModel
+
+@{
+    ViewData["Title"] = "CreateProblem";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+
+@using (Html.BeginForm("Create", "Problem", FormMethod.Post))
+    {
+
+        
+        <h2>Post New Problem</h2>
+    
+        <div class="form-group">
+            <label for="Subject">Subject: </label>
+            <textarea class="form-control" id="Subject" name="Subject" rows="2"></textarea>
+            <br> 
+            <label for="ProblemDesc">Description: </label>
+            <textarea class="form-control" id="ProblemDesc" name="ProblemDesc" rows="5"></textarea>
+        </div>
+        <br />
+        <div class="d-grid d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-success">Post</button>
+        </div>
+    }
+@*@using (Html.BeginForm("ViewReplies","Problem")){
+    <div class="col-md-6">
+        <!-- Display replies for the problem -->
+      
+            <h3>Replies for This Problem</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Reply</th>
+                        <th>Entry Date and time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td>@Model.reply.ReplyDesc</td>
+                            <td>@Model.reply.EntryDate</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        
+        
+    </div>
+}*@
+<br />
+
+
+<br />

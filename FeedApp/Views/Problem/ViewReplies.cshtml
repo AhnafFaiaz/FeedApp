@@ -1,0 +1,82 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<FeedApp.Core.Entities.General.Reply>
+
+@{
+    ViewData["Title"] = "ViewReplies";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    int problemId = ViewBag.problemId;
+    
+}
+<div class="d-grid d-md-flex justify-content-md-end">
+    <a class="btn btn-secondary me-md-1" asp-action="MyProblems" asp-controller="Problem">Back</a>
+</div>
+
+@*<h2>Your Problem Solutions</h2>*@
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("UserChangeStatus", "Problem", FormMethod.Post))
+        {
+            <input type="hidden" name="problemId" value="@problemId"/>
+            
+
+            <h3>Give a Reply</h3>
+            <div class="form-group">
+                <label for="ReplyDesc">Reply: </label>
+                <textarea class="form-control" id="ReplyDesc" name="ReplyDesc" rows="5"></textarea>
+            </div>
+            @*<h4 style="color:crimson">Change Status</h4>*@
+            <label for="newStatus">Select Status:</label>
+            <select class="form-control" id="newStatus" name="newStatus">
+                <option value="2">Processing</option>
+                <option value="3">Solved</option>
+                <option value="4">Not Solved</option>
+                <option value="6">Unsolvable</option>
+            </select>
+            <br />
+            <div class="d-grid d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-success">Post</button>
+            </div>
+        }
+        <br />
+    </div>
+    <div class="col-md-6">
+        @if (Model.Any())
+        {
+            
+            <h3>History</h3>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Replies</th>
+                        <th>Entry Date and Time</th>
+                
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var reply in Model.OrderByDescending(r => r.EntryDate))
+                    {
+                        <tr>
+                            <td>@reply.Users.UserName</td>
+                            <td>@reply.ReplyDesc</td>
+                            <td>@reply.EntryDate </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <br />
+            <h4 style="color:crimson">No replies found!!</h4>
+            <img src="~/facepalm-disappointed.gif" alt="Image Description" class="small-image" />
+
+        }
+        <br />
+        @*<div class="d-grid d-md-flex justify-content-md-end">
+        <a class="btn btn-secondary me-md-1" asp-action="MyProblems" asp-controller="Problem">Back</a>
+        </div>*@
+        <br />
+    </div>
+</div>

@@ -1,0 +1,12 @@
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\bin\Debug\net7.0\FeedApp.Core.deps.json
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\bin\Debug\net7.0\FeedApp.Core.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\bin\Debug\net7.0\FeedApp.Core.pdb
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.csproj.AssemblyReference.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.AssemblyInfoInputs.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.AssemblyInfo.cs
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.csproj.CoreCompileInputs.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\refint\FeedApp.Core.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\FeedApp.Core.pdb
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Core\obj\Debug\net7.0\ref\FeedApp.Core.dll

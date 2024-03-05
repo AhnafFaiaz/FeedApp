@@ -1,0 +1,17 @@
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Infra.deps.json
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Infra.runtimeconfig.json
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Infra.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Infra.pdb
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Core.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\bin\Debug\net7.0\FeedApp.Core.pdb
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.csproj.AssemblyReference.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.AssemblyInfoInputs.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.AssemblyInfo.cs
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.csproj.CoreCompileInputs.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.csproj.CopyComplete
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\refint\FeedApp.Infra.dll
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.pdb
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\FeedApp.Infra.genruntimeconfig.cache
+E:\DATASOFT\Practice codes\FeedApp\FeedApp.Infra\obj\Debug\net7.0\ref\FeedApp.Infra.dll

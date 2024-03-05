@@ -1,0 +1,60 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<FeedApp.Core.Entities.Business.ProblemViewModel>
+@*@model List<FeedApp.Core.Entities.General.Problems>*@
+
+@{
+    ViewData["Title"] = "UserChangeStatus";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Change Status</h2>
+
+@using (Html.BeginForm("UserChangeStatus", "Problem", FormMethod.Get))
+{
+   
+    
+    @if (Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    @*<th>ID</th>*@
+                    <th>Subject</th>
+                    <th>Problem Description</th>
+                    <th>Status</th>
+                    
+                
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var problem in Model)
+                {
+                    <tr>
+                        @*<td>@problem.Id</td>*@
+                        <td>@problem.Subject</td>
+                        <td>@problem.ProblemDesc</td>
+                        <td>
+                            <select class="form-control" id="Status" name="Status">
+                                <option value="3">Solved</option>
+                                <option value="4">Not Solved</option>
+                                <option value="6">Unsolvable</option>
+                            </select>
+                        </td>
+                        
+                    
+                    </tr>
+                    @Html.HiddenFor(m => problem.Id)
+
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <br />
+        <h4>No replies found!!</h4>
+    }
+    <button type="submit" class="btn btn-primary">Update</button>
+}
+<br />
+<a class="btn btn-secondary me-md-1" asp-action="UserDashboard" asp-controller="Dashboard">Back</a>

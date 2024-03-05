@@ -1,0 +1,69 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*@using X.PagedList;*@
+
+@model List<FeedApp.Core.Entities.Business.ProblemViewModel>
+@{
+    ViewData["Title"] = "MyProblems";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@using (Html.BeginForm("MyProblems", "Problem", FormMethod.Get))
+{
+    <h2>My Problems</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Subject </th>
+                <th>Problem Description </th>
+                <th>Status </th>
+                <th> </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var problems in Model.OrderByDescending(r => r.Id))
+            {
+                <tr>
+                    <td>@problems.Subject</td>
+                    <td>@problems.ProblemDesc</td>
+                    <td>@problems.Status</td>
+                    <td>
+                        <a asp-action="ViewReplies" asp-route-id="@problems.Id" class="btn btn-outline-info">Details</a>
+                    </td>
+                    
+                    @*<td><a asp-action="Delete" asp-controller="Problem" asp-route-id="@problems.problemID">Remove Problem</a>|</td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+
+   @* <div class="pagination-container">
+        <ul class="pagination">
+            @if (Model.PageCount > 1)
+            {
+                <li class="page-item @(Model.IsFirstPage ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = 1 })">First</a>
+                </li>
+                <li class="page-item @(Model.IsFirstPage ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+                </li>
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(Model.PageNumber == i ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                    </li>
+                }
+                <li class="page-item @(Model.IsLastPage ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+                </li>
+                <li class="page-item @(Model.IsLastPage ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = Model.PageCount })">Last</a>
+                </li>
+            }
+        </ul>
+    </div>*@
+
+}
+@*<Br />
+<Br />
+<a class="btn btn-primary" asp-action="UserDashboard" asp-controller="Dashboard">Back</a>*@

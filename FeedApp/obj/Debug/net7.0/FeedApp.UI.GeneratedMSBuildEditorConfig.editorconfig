@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FeedApp.UI
+build_property.RootNamespace = FeedApp.UI
+build_property.ProjectDir = E:\DATASOFT\Practice codes\FeedApp\FeedApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\DATASOFT\Practice codes\FeedApp\FeedApp
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Dashboard/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Dashboard/UserDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/AddReply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxBZGRSZXBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/MyProblems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxNeVByb2JsZW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/ProblemIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxQcm9ibGVtSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/UserChangeStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxVc2VyQ2hhbmdlU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Problem/ViewReplies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmxlbVxWaWV3UmVwbGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Signin/Signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmluXFNpZ25pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATASOFT/Practice codes/FeedApp/FeedApp/Views/Signup/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbnVwXFNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

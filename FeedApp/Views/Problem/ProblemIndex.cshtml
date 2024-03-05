@@ -1,0 +1,80 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList;
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common;
+@model IPagedList<FeedApp.Core.Entities.Business.ProblemViewModel>
+@{
+    ViewData["Title"] = "ProblemIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    @*@using (Html.BeginForm("ProblemIndex", "Problem", FormMethod.Get))
+    {*@
+
+<div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-box"></i> Problems</span>
+            @*<a asp-action="Create" class="btn btn-success"> Create New</a>*@
+        </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                
+                <th>User Name</th>
+                <th>Subject </th>
+                <th>Problem Description </th>
+                <th>Status </th>
+                <th>   </th> 
+                   
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var problems in Model)
+                {
+                    <tr>
+                        <td>@problems.Users.UserName</td>
+                        <td>@problems.Subject</td>
+                        <td>@problems.ProblemDesc</td>
+                        <td>@problems.Status</td>
+                        <td>
+                            <a asp-action="AddReply" asp-route-id="@problems.Id" class="btn btn-outline-info">Reply</a>
+                        </td>
+                        @*<td><a asp-action="Delete" asp-controller="Problem" asp-route-id="@problems.problemID">Remove Problem</a>|</td>*@
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="pagination-container">
+            <ul class="pagination">
+                @if (Model.PageCount > 1)
+                {
+                    <li class="page-item @(Model.IsFirstPage ? "disabled" : "")">
+                        <a class="page-link" href="@Url.Action("ProblemIndex", new { page = 1 })">First</a>
+                    </li>
+                    <li class="page-item @(Model.IsFirstPage ? "disabled" : "")">
+                        <a class="page-link" href="@Url.Action("ProblemIndex", new { page = Model.PageNumber - 1 })">Previous</a>
+                    </li>
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        <li class="page-item @(Model.PageNumber == i ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("ProblemIndex", new { page = i })">@i</a>
+                        </li>
+                    }
+                    <li class="page-item @(Model.IsLastPage ? "disabled" : "")">
+                        <a class="page-link" href="@Url.Action("ProblemIndex", new { page = Model.PageNumber + 1 })">Next</a>
+                    </li>
+                    <li class="page-item @(Model.IsLastPage ? "disabled" : "")">
+                        <a class="page-link" href="@Url.Action("ProblemIndex", new { page = Model.PageCount })">Last</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+    
+   @* }*@
+@*    <Br /><Br />
+<a class="btn btn-secondary me-md-1" asp-action="AdminDashboard" asp-controller="Dashboard">Back</a>*@

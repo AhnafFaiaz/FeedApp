@@ -1,0 +1,41 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model List<FeedApp.Core.Entities.General.Problems>
+@{
+    ViewData["Title"] = "UserDashboard";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@*
+@{
+    var userName = TempData["UserName"] as string;
+    if (!string.IsNullOrEmpty(userName))
+    {
+        ViewBag.UserName = userName;
+    }
+}
+@if (!string.IsNullOrEmpty(ViewBag.UserName))
+{
+    <h2> Welcome, @ViewBag.UserName </h2>
+}*@
+@*@{
+    var userName = Context.Session.GetString("UserName");
+}
+
+@if (!string.IsNullOrEmpty(userName))
+{
+    <h2>Welcome, @userName</h2>
+}
+*@
+
+@*<a class="btn btn-primary" asp-action="Create" asp-controller="Problem">Post Problems</a>
+<br></br>
+<br></br>
+<a class="btn btn-primary" asp-action="MyProblems" asp-controller="Problem">See My Problems</a>
+<br></br>
+<br></br>
+<a class="btn btn-primary" asp-action="ViewReplies" asp-controller="Problem">See My Problem Solutions</a>
+<br></br>*@
+
+@*<a class="btn btn-primary" asp-action="Logout" asp-controller="Signin">Logout</a>*@
+
